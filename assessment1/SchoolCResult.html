@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+    <style>
+        /* Set font and background */
+        body {
+            background: url('https://www.transparenttextures.com/patterns/white-linen.png');
+            background-color: #f1f1f1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 40px;
+        }
+
+        /* Main container */
+        .results-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 30px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headers */
+        h1 {
+            text-align: center;
+            color: #4a6fa5;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Button */
+        button {
+            padding: 14px;
+            background-color: #4a6fa5;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #3a5c88;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="results-container">
+    <h1>Survey Results</h1>
+    <p class="description"><i>Here are the responses collected from the Classroom Feedback Survey.</i></p>
+    <hr>
+
+    <h2>Student Feedback Summary</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Grade & Section</th>
+                <th>Subject</th>
+                <th>Teacher Rating</th>
+                <th>Favorite Lesson</th>
+                <th>Suggestions</th>
+                <th>Submit Anonymously</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic content will go here -->
+            <!-- Example Row: -->
+            <!-- 
+            <tr>
+                <td>Example Name</td>
+                <td>Grade Example</td>
+                <td>Subject Example</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>Favorite Lesson Example</td>
+                <td>Suggestions Example</td>
+                <td>Yes/No</td>
+            </tr>
+            -->
+        </tbody>
+    </table>
+
+    <button>Export Results</button>
+</div>
+
+</body>
+</html>

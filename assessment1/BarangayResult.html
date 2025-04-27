@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Results</title>
+  <style>
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007b5e;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 5px;
+      width: 90px;
+      height: 90px;
+    }
+
+    .logo-left {
+      left: 20px;
+    }
+
+    .logo-right {
+      right: 20px;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 17px;
+      margin: 20px auto;
+      max-width: 650px;
+      padding: 25px;
+      line-height: 1.5;
+      color: #333;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .table-container {
+      max-width: 95%;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #e0f2f1;
+      color: #007b5e;
+      font-size: 18px;
+    }
+
+    tr:hover {
+      background-color: #f0f8ff;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        background-color: #e0f2f1;
+      }
+
+      td {
+        border: none;
+        padding: 10px 5px;
+        position: relative;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="C:/Users/Danielle/Documents/assessment1/Malabon_Logo.png" alt="Malabon Logo" class="logo logo-left">
+    <h1 class="title">Survey Results</h1>
+    <img src="C:/Users/Danielle/Documents/assessment1/bayanbayanan_logo.png" alt="Barangay Logo" class="logo logo-right">
+  </header>
+
+  <p class="description">
+    Here are the collected health survey responses from the residents.  
+    This table helps us monitor and analyze the current health status within the barangay.
+  </p>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Purok</th>
+          <th>Vaccination Status</th>
+          <th>Symptoms</th>
+          <th>Last Checkup</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+</body>
+</html>
