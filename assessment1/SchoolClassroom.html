@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Classroom Feedback Survey</title>
+    <style>
+        /* Set font and background */
+        body {
+            background: url('https://www.transparenttextures.com/patterns/white-linen.png');
+            background-color: #f1f1f1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 40px;
+        }
+
+        /* Main container */
+        .survey-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 30px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headers */
+        h1 {
+            text-align: center;
+            color: #4a6fa5;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Description */
+        .description {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Form styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 12px 15px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #4a6fa5;
+            background-color: #fff;
+        }
+
+        /* Checkbox section */
+        .anonymous-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .anonymous-check input {
+            margin-right: 10px;
+        }
+
+        /* Button */
+        button {
+            padding: 14px;
+            background-color: #4a6fa5;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #3a5c88;
+            transform: translateY(-2px);
+        }
+
+        /* Star Rating */
+        .star-rating {
+            direction: rtl;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 5px;
+        }
+
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 28px;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .star-rating input[type="radio"]:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="survey-container">
+    <h1>Classroom Feedback Survey</h1>
+    <p class="description"><i>We value your opinion! Please take a few moments to provide feedback on your classroom experience. Your responses will help improve the learning environment.</i></p>
+    <hr>
+    <form>
+        <h2>Student Info</h2>
+
+        <label for="studentName">Name</label>
+        <input type="text" id="studentName" name="studentName" placeholder="Enter your name">
+
+        <label for="gradeSection">Grade & Section</label>
+        <select id="gradeSection" name="gradeSection">
+            <option value="">Select Grade</option>
+            <option value="7-A">Grade 7-A</option>
+            <option value="7-B">Grade 7-B</option>
+            <option value="7-C">Grade 7-C</option>
+            <option value="8-A">Grade 8-A</option>
+            <option value="8-B">Grade 8-B</option>
+        </select>
+
+        <h2>Feedback</h2>
+
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="">Select Subject</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="MAPEH">MAPEH</option>
+            <option value="Araling Panlipunan">Araling Panlipunan</option>
+        </select>
+
+        <label for="teacherRating">Teacher Rating</label>
+        <div class="star-rating">
+            <input type="radio" id="5-stars" name="rating" value="5">
+            <label for="5-stars">&#9733;</label>
+            <input type="radio" id="4-stars" name="rating" value="4">
+            <label for="4-stars">&#9733;</label>
+            <input type="radio" id="3-stars" name="rating" value="3">
+            <label for="3-stars">&#9733;</label>
+            <input type="radio" id="2-stars" name="rating" value="2">
+            <label for="2-stars">&#9733;</label>
+            <input type="radio" id="1-star" name="rating" value="1">
+            <label for="1-star">&#9733;</label>
+        </div>
+
+        <label for="favoriteLesson">Favorite Lesson</label>
+        <input type="text" id="favoriteLesson" name="favoriteLesson" placeholder="Favorite lesson">
+
+        <label for="suggestions">Suggestions for Improvement</label>
+        <textarea id="suggestions" name="suggestions" placeholder="Write your suggestions here..."></textarea>
+
+        <div class="anonymous-check">
+            <input type="checkbox" id="anonymous" name="anonymous">
+            <label for="anonymous">Submit Anonymously</label>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+
+</body>
+</html>
