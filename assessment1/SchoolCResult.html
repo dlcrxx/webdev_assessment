@@ -1,126 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Results</title>
-    <style>
-        /* Font and background */
-        body {
-            background: url('https://www.transparenttextures.com/patterns/white-linen.png');
-            background-color: #f1f1f1;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            padding: 40px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Results</title>
+  <style>
+    /* Font and background */
+    body {
+      background: url('https://www.transparenttextures.com/patterns/white-linen.png');
+      background-color: #f1f1f1;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 40px;
+    }
 
-        /* Main container */
-        .results-container {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px 30px;
-            max-width: 800px;
-            margin: auto;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
+    /* Main container */
+    .results-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px 30px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Add vertical spacing between sections */
+    }
 
-        /* Headers */
-        h1 {
-            text-align: center;
-            color: #4a6fa5;
-            margin-bottom: 10px;
-        }
+    /* Headers */
+    h1 {
+      text-align: center;
+      color: #4a6fa5;
+      margin-bottom: 10px;
+    }
 
-        h2 {
-            color: #333;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
+    h2 {
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
 
-        /* Table styles */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+    .description {
+      text-align: center;
+      margin-top: 0;
+      font-size: 16px;
+      color: #555;
+    }
 
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ccc;
-        }
+    hr {
+      margin: 10px 0 20px 0;
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+    }
 
-        th {
-            background-color: #f1f1f1;
-            color: #333;
-        }
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+    th, td {
+      padding: 14px 12px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      font-size: 15px;
+    }
 
-        tr:hover {
-            background-color: #f1f1f1;
-        }
+    th {
+      background-color: #f7f7f7;
+      color: #333;
+    }
 
-        /* Button */
-        button {
-            padding: 14px;
-            background-color: #4a6fa5;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
-        }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
 
-        button:hover {
-            background-color: #3a5c88;
-            transform: translateY(-2px);
-        }
-    </style>
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Button container */
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 14px 24px;
+      background-color: #4a6fa5;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #3a5c88;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 <body>
 
 <div class="results-container">
-    <h1>Survey Results</h1>
-    <p class="description"><i>Here are the responses collected from the Classroom Feedback Survey.</i></p>
-    <hr>
+  <h1>Survey Results</h1>
+  <p class="description"><i>Here are the responses collected from the Classroom Feedback Survey.</i></p>
+  <hr>
 
-    <h2>Student Feedback Summary</h2>
+  <h2>Student Feedback Summary</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Grade & Section</th>
-                <th>Subject</th>
-                <th>Teacher Rating</th>
-                <th>Favorite Lesson</th>
-                <th>Suggestions</th>
-                <th>Submit Anonymously</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Dynamic content will go here -->
-            <!-- Example Row: -->
-            <!-- 
-            <tr>
-                <td>Example Name</td>
-                <td>Grade Example</td>
-                <td>Subject Example</td>
-                <td>⭐⭐⭐⭐</td>
-                <td>Favorite Lesson Example</td>
-                <td>Suggestions Example</td>
-                <td>Yes/No</td>
-            </tr>
-            -->
-        </tbody>
-    </table>
-
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Grade & Section</th>
+        <th>Subject</th>
+        <th>Teacher Rating</th>
+        <th>Favorite Lesson</th>
+        <th>Suggestions</th>
+        <th>Submit Anonymously</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Anonymous</td>
+            <td>Grade 7-A</td>
+            <td>Math</td>
+            <td>5</td>
+            <td>Algebra</td>
+            <td>More practice problems</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Sean Louis</td>
+            <td>Grade 8-B</td>
+            <td>Science</td>
+            <td>4</td>
+            <td>Photosynthesis</td>
+            <td>Use more visual presentations</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Carlos Rivera</td>
+            <td>Grade 7-C</td>
+            <td>English</td>
+            <td>5</td>
+            <td>Poetry</td>
+            <td>Add more group work</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Anonymous</td>
+            <td>Grade 7-B</td>
+            <td>MAPEH</td>
+            <td>3</td>
+            <td>Basic Dance</td>
+            <td>More fun activities</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Luisa Ramos</td>
+            <td>Grade 8-A</td>
+            <td>Araling Panlipunan</td>
+            <td>4</td>
+            <td>Kastila sa Pilipinas</td>
+            <td>Include short videos</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Mark Cruz</td>
+            <td>Grade 7-A</td>
+            <td>Math</td>
+            <td>2</td>
+            <td>Fractions</td>
+            <td>More one-on-one help</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Rica Fernandez</td>
+            <td>Grade 8-B</td>
+            <td>Science</td>
+            <td>5</td>
+            <td>Solar System</td>
+            <td>Field trip if possible</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Anonymous</td>
+            <td>Grade 7-C</td>
+            <td>English</td>
+            <td>4</td>
+            <td>Short Story Writing</td>
+            <td>More creative writing</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Lorenzo Diaz</td>
+            <td>Grade 7-B</td>
+            <td>MAPEH</td>
+            <td>3</td>
+            <td>Music Appreciation</td>
+            <td>More instruments in class</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Ana Bautista</td>
+            <td>Grade 8-A</td>
+            <td>Araling Panlipunan</td>
+            <td>5</td>
+            <td>Kasaysayan ng Pilipinas</td>
+            <td>Interactive timelines</td>
+            <td>No</td>
+        </tr>    
+    </tbody>
+  </table>
+  
+  <div class="button-container">
     <button>Export Results</button>
+  </div>
 </div>
-
 </body>
 </html>
