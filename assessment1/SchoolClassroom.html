@@ -7,10 +7,19 @@
     <style>
         /* Font and background */
         body {
-            background: url('https://www.transparenttextures.com/patterns/white-linen.png');
-            background-color: #f1f1f1;
+            background-image: url(notebook.png);
+
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             padding: 40px;
+            
         }
 
         /* Main container */
@@ -19,8 +28,11 @@
             padding: 40px 30px;
             max-width: 800px;
             margin: auto;
+            margin-bottom: 100px;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            
+      
         }
 
         /* Headers */
@@ -115,13 +127,15 @@
 
         .star-rating input[type="radio"] {
             display: none;
+            
         }
 
         .star-rating label {
-            font-size: 28px;
+            font-size: 38px;
             color: #ccc;
             cursor: pointer;
             transition: color 0.3s;
+            text-align: center;
         }
 
         .star-rating input[type="radio"]:checked ~ label,
@@ -189,8 +203,7 @@
             <input type="checkbox" id="anonymous" name="anonymous">
             <label for="anonymous">Submit Anonymously</label>
         </div>
-
-        <button type="submit">Submit Feedback</button>
+        <button> <a href="http://localhost:3000/assessment1/SchoolCResult.html"> Return </a> </button> 
     </form>
 </div>
 

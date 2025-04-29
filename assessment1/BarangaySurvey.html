@@ -10,6 +10,23 @@
       margin: 0;
       padding: 0;
     }
+     .DOH{
+     
+     position: absolute;
+      top: 5px;
+      width: 90px;
+      height: 90px;
+     right: 300px;
+      
+     }
+     .bayanbayanan{
+      position: absolute;
+      top: 5px;
+      width: 90px;
+      height: 90px;
+     right: 330px;
+    
+     }
 
     header {
       background-color: #007b5e;
@@ -28,6 +45,7 @@
       top: 5px;
       width: 90px;
       height: 90px;
+      
     }
 
     .logo-left {
@@ -60,6 +78,7 @@
     form {
       max-width: 650px;
       margin: auto;
+      margin-bottom: 100px;
       background: white;
       padding: 25px;
       border-radius: 10px;
@@ -177,9 +196,10 @@
 <body>
 
   <header>
-    <img src="C:/Users/Danielle/Documents/assessment1/Malabon_Logo.png" alt="Malabon Logo" class="logo logo-left">
+   
+     <img src="DOH_Logo.png" alt="DOH Logo" class="DOH"> </div> 
     <h1 class="title">Barangay Health Survey Form</h1>
-    <img src="C:\Users\Danielle\Documents\assessment1\bayanbayanan_logo.png" alt="Barangay Logo" class="logo logo-right">
+  <img  src="bayanbayanan_logo.png" alt="Barangay Logo" class="bayanbayanan">
   </header>
 
   <p class="description">
@@ -289,6 +309,11 @@
           <input type="checkbox" id="lossoftaste" value="LossOfTaste">
           <label for="lossoftaste">Loss of Taste</label>
         </div>
+
+        <label for="Symptoms">Other Symptoms:</label>
+        <input type="text" id="opt" >
+      </div>
+
       </div>
 
       <label for="checkup">Last Medical Checkup:</label>
