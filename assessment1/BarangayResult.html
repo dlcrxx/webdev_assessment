@@ -23,20 +23,27 @@
       position: relative;
     }
 
-    .logo {
-      position: absolute;
-      top: 5px;
-      width: 90px;
-      height: 90px;
+    .DOH{
+     top: 5px;
+     width: 90px;
+     height: 90px;
+     position: relative;
+      right: 80px;
+     
+    }
+    
+    .bayanbayanan{
+     position: relative;
+     top: 5px;
+     width: 90px;
+     height: 90px;
+     left: 80px;
+   
     }
 
-    .logo-left {
-      left: 20px;
-    }
+  
 
-    .logo-right {
-      right: 20px;
-    }
+
 
     .title {
       font-size: 30px;
@@ -90,6 +97,8 @@
     }
 
     @media (max-width: 600px) {
+
+
       .logo {
         width: 50px;
         height: 50px;
@@ -110,15 +119,29 @@
         padding: 10px 5px;
         position: relative;
       }
+    
+      button {
+      margin-top: 20px;
+      padding: 12px;
+      background: #007b5e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 100%;
+    }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="C:/Users/Danielle/Documents/assessment1/Malabon_Logo.png" alt="Malabon Logo" class="logo logo-left">
+    <img src="DOH_Logo.png" alt="DOH Logo" class="DOH"> </div> 
     <h1 class="title">Survey Results</h1>
-    <img src="C:/Users/Danielle/Documents/assessment1/bayanbayanan_logo.png" alt="Barangay Logo" class="logo logo-right">
+     
+   
+  <img  src="bayanbayanan_logo.png" alt="Barangay Logo" class="bayanbayanan">
   </header>
 
   <p class="description">
@@ -238,6 +261,8 @@
     </tbody>
   </table>
   </div>
+
+  <button> <a href="http://localhost:3000/assessment1/BarangaySurvey.html"> Return </a> </button> 
 
 </body>
 </html>
